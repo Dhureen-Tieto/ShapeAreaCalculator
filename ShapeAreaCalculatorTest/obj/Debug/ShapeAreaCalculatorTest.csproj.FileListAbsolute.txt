@@ -1,0 +1,9 @@
+c:\users\madapdhu\documents\visual studio 2015\Projects\ShapeAreaCalculator\ShapeAreaCalculatorTest\bin\Debug\ShapeAreaCalculatorTest.dll
+c:\users\madapdhu\documents\visual studio 2015\Projects\ShapeAreaCalculator\ShapeAreaCalculatorTest\bin\Debug\ShapeAreaCalculatorTest.pdb
+c:\users\madapdhu\documents\visual studio 2015\Projects\ShapeAreaCalculator\ShapeAreaCalculatorTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+c:\users\madapdhu\documents\visual studio 2015\Projects\ShapeAreaCalculator\ShapeAreaCalculatorTest\bin\Debug\ShapeAreaCalculator.exe
+c:\users\madapdhu\documents\visual studio 2015\Projects\ShapeAreaCalculator\ShapeAreaCalculatorTest\bin\Debug\ShapeAreaCalculator.pdb
+c:\users\madapdhu\documents\visual studio 2015\Projects\ShapeAreaCalculator\ShapeAreaCalculatorTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+c:\users\madapdhu\documents\visual studio 2015\Projects\ShapeAreaCalculator\ShapeAreaCalculatorTest\obj\Debug\ShapeAreaCalculatorTest.csprojResolveAssemblyReference.cache
+c:\users\madapdhu\documents\visual studio 2015\Projects\ShapeAreaCalculator\ShapeAreaCalculatorTest\obj\Debug\ShapeAreaCalculatorTest.dll
+c:\users\madapdhu\documents\visual studio 2015\Projects\ShapeAreaCalculator\ShapeAreaCalculatorTest\obj\Debug\ShapeAreaCalculatorTest.pdb
