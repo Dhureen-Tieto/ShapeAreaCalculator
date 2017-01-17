@@ -16,9 +16,9 @@ namespace ShapeAreaCalculator
                 string displayText = "Enter choice:\n1.Circle\n2.Rectangle\n3.Triangle\n4.Exit\n";
                 Console.WriteLine(displayText);
                 string inputChoice = Console.ReadLine();
-                if (inputChoice == "exit")
+                if (inputChoice == "4")
                 {
-                    break;
+                    return ;
                 }
                 Shape shape = ConstructAShape(inputChoice);                          
                 shape.CalculateArea(GetShapeDimensions(int.Parse(inputChoice))).Display();
