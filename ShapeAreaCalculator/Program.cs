@@ -20,44 +20,30 @@ namespace ShapeAreaCalculator
                 {
                     break;
                 }
-                Shape shape = ConstructAShape(inputChoice);
-                List<double> dimensions = new List<double>();
-                dimensions = GetShapeDimensions(int.Parse(inputChoice));                
-                shape.CalculateArea(dimensions).Display();
+                Shape shape = ConstructAShape(inputChoice);                          
+                shape.CalculateArea(GetShapeDimensions(int.Parse(inputChoice))).Display();
             }
         }
 
-        private static List<double> GetShapeDimensions(int shapeTypeOption)
+        private static double[] GetShapeDimensions(int shapeTypeOption)
         {
             //throw new NotImplementedException();
-            List<double> dimensions = new List<double>();
-            string[] auxDimensions = {"",""};
+            double[] dimensions;
             switch (shapeTypeOption)
             {
-                case ShapeFactory.ShapeTypeConstants.Circle:
-                    Console.WriteLine("Enter radius");
-                    dimensions.Add(double.Parse(Console.ReadLine().Trim()));
+                case ShapeFactory.ShapeTypeConstants.Circle: Console.WriteLine("Enter radius");
+                    
+                    break; 
+                case ShapeFactory.ShapeTypeConstants.Rectangle: Console.WriteLine("Enter Length and Breadth");
+                    
                     break;
-                case ShapeFactory.ShapeTypeConstants.Rectangle:
-                    Console.WriteLine("Enter Length and Breadth");
-                    auxDimensions = GetDimensionsAsArray(dimensions);
-                    break;
-                case ShapeFactory.ShapeTypeConstants.Triangle:
-                    Console.WriteLine("Enter Height and Base");
-                    auxDimensions = GetDimensionsAsArray(dimensions);
+                case ShapeFactory.ShapeTypeConstants.Triangle: Console.WriteLine("Enter Height and Base");
+                    
                     break;
                 
             }
-
+            dimensions = Array.ConvertAll(Console.ReadLine().Split(' '), Double.Parse);
             return dimensions ;
-        }
-
-        private static string[] GetDimensionsAsArray(List<double> dimensions)
-        {
-            string[] auxDimensions = Console.ReadLine().Trim().Split(',');
-            dimensions.Add(double.Parse(auxDimensions[0]));
-            dimensions.Add(double.Parse(auxDimensions[1]));
-            return auxDimensions;
         }
 
         private static Shape ConstructAShape(string line)
