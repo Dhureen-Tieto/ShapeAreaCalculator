@@ -105,5 +105,15 @@ namespace ShapeAreaCalculatorTest
             Shape shape = shapeFactory.GetShape(shapeTypeOption);
             var result = shape.CalculateArea(-1, 1);
         }
+
+        [TestMethod]
+        public void GivingTwoAsLengthAndThreeAsBreadthsWhileCalculatingAreaOfRectangleShouldReturnCorrectValue()
+        {
+            ShapeFactory shapeFactory = new ShapeFactory();
+            int shapeTypeOption = 2;
+            Shape shape = shapeFactory.GetShape(shapeTypeOption);
+            var result = shape.CalculateArea(2, 3);
+            Assert.AreEqual(2 * 3, result.Area, "Result is not correct");
+        }
     }
 }
